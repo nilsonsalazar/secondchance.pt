@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecondChance — Curated Second-Hand Warehouse</title>
+    <title>SecondChance — Artigos de Segunda Mão Selecionados</title>
     <!-- Tailwind CSS para el prototipado rápido -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -34,7 +34,6 @@
             }
         }
     </script>
-    <!-- Fuentes Google: Playfair Display (Vintage) y Plus Jakarta Sans (Moderna) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -54,58 +53,57 @@
             </a>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-olive-800/80">
                 <a href="#categorias" class="hover:text-terracotta-600 transition-colors">Categorias</a>
+                <a href="#lojas" class="hover:text-terracotta-600 transition-colors">Nossas Lojas</a>
                 <a href="#como-funciona" class="hover:text-terracotta-600 transition-colors">Como Funciona</a>
-                <a href="#sobre-nos" class="hover:text-terracotta-600 transition-colors">O Manifesto</a>
             </nav>
             <div>
                 <a href="https://wa.me/#" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-olive-800 hover:bg-terracotta-600 transition-all rounded-none shadow-sm">
-                    Reservar via WhatsApp
+                    Fale Connosco
                 </a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section (Estilo Editorial, Enfocado en Fotografía) -->
+        <!-- Hero Section -->
         <section class="relative overflow-hidden py-16 lg:py-24 border-b border-cream-200">
             <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
                 <!-- Columna de Texto -->
                 <div class="lg:col-span-5 space-y-6">
                     <span class="inline-block text-xs font-semibold tracking-widest text-terracotta-600 uppercase">
-                        Armazém de Curadoria Independente
+                        Seleção Independente em Toda a Rede de Lojas
                     </span>
                     <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal leading-tight text-olive-800">
                         Design com história. <br>
-                        <span class="italic font-light">Preços sem mistério.</span>
+                        <span class="italic font-light">Peças singulares.</span>
                     </h1>
                     <p class="text-base sm:text-lg text-olive-800/70 leading-relaxed max-w-md">
-                        Não somos uma feira de usados comum, nem uma boutique vintage inflacionada. Selecionamos, inspecionamos e catalogamos peças singulares para a sua casa.
+                        Não somos uma feira de usados comum, nem uma oficina de restauro. Selecionamos rigorosamente peças repletas de caráter para a sua casa e para o seu dia a dia.
                     </p>
                     <div class="pt-4 flex flex-col sm:flex-row gap-4">
                         <a href="#categorias" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold uppercase tracking-wider text-white bg-terracotta-600 hover:bg-terracotta-500 transition-all shadow-md text-center">
-                            Explorar Catálogo
+                            Ver Categorias
                         </a>
-                        <a href="#como-funciona" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold uppercase tracking-wider text-olive-800 border border-olive-800/30 hover:border-olive-800 transition-all text-center">
-                            Como Funciona?
+                        <a href="#lojas" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold uppercase tracking-wider text-olive-800 border border-olive-800/30 hover:border-olive-800 transition-all text-center">
+                            Encontrar Lojas Perto de Si
                         </a>
                     </div>
                 </div>
 
-                <!-- Columna de Imágenes (Collage Moderno/Vintage asimétrico) -->
+                <!-- Columna de Imágenes (Collage) -->
                 <div class="lg:col-span-7 grid grid-cols-12 gap-4 relative">
-                    <!-- Decoración geométrica retro de fondo -->
                     <div class="absolute -right-8 -bottom-8 w-48 h-48 rounded-full bg-cream-200 opacity-50 -z-10"></div>
                     
                     <div class="col-span-8 overflow-hidden vintage-border shadow-lg transform -rotate-1 hover:rotate-0 transition-transform duration-500">
                         <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000&auto=format&fit=crop" 
-                             alt="Cadeiras Mid-Century Modernas" 
+                             alt="Mobiliário Selecionado" 
                              class="w-full h-[350px] object-cover hover:scale-105 transition-transform duration-700">
                     </div>
                     
                     <div class="col-span-4 overflow-hidden vintage-border shadow-lg transform translate-y-12 rotate-2 hover:rotate-0 transition-transform duration-500">
                         <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=600&auto=format&fit=crop" 
-                             alt="Detalhe de móvel de madeira vintage" 
+                             alt="Detalhes vintage de madeira" 
                              class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-700">
                     </div>
                 </div>
@@ -118,83 +116,150 @@
             <div class="max-w-7xl mx-auto px-6">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-y md:divide-y-0 md:divide-x divide-cream-200/60">
                     <div class="text-center md:px-4">
-                        <p class="font-serif text-3xl font-bold text-olive-800">100%</p>
-                        <p class="text-xs uppercase tracking-wider text-olive-800/60 mt-1">Inspecionado na Origem</p>
+                        <p class="font-serif text-3xl font-bold text-olive-800">Várias Lojas</p>
+                        <p class="text-xs uppercase tracking-wider text-olive-800/60 mt-1">Por Todo Portugal</p>
                     </div>
                     <div class="text-center pt-6 md:pt-0 md:px-4">
                         <p class="font-serif text-3xl font-bold text-olive-800">Fotografia</p>
                         <p class="text-xs uppercase tracking-wider text-olive-800/60 mt-1">Real e Sem Filtros</p>
                     </div>
                     <div class="text-center pt-6 md:pt-0 md:px-4">
-                        <p class="font-serif text-3xl font-bold text-olive-800">Semanal</p>
-                        <p class="text-xs uppercase tracking-wider text-olive-800/60 mt-1">Novas Entradas de Stock</p>
+                        <p class="font-serif text-3xl font-bold text-olive-800">Stock Volátil</p>
+                        <p class="text-xs uppercase tracking-wider text-olive-800/60 mt-1">Novas Entradas Diárias</p>
                     </div>
                     <div class="text-center pt-6 md:pt-0 md:px-4">
-                        <p class="font-serif text-3xl font-bold text-olive-800">Direto</p>
-                        <p class="text-xs uppercase tracking-wider text-olive-800/60 mt-1">Reserva via WhatsApp</p>
+                        <p class="font-serif text-3xl font-bold text-olive-800">WhatsApp</p>
+                        <p class="text-xs uppercase tracking-wider text-olive-800/60 mt-1">Suporte e Informações</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección de Categorías Reales (Ignoradas en la versión de Polsia) -->
+        <!-- Sección de Categorías con Fotos Ampliadas -->
         <section id="categorias" class="py-20 bg-cream-50">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
                     <div>
-                        <span class="text-xs font-semibold tracking-widest text-terracotta-600 uppercase">Explorar por Estilo e Função</span>
-                        <h2 class="font-serif text-3xl sm:text-4xl text-olive-800 mt-2">O que temos no nosso armazém</h2>
+                        <span class="text-xs font-semibold tracking-widest text-terracotta-600 uppercase">O que encontra nas nossas lojas</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl text-olive-800 mt-2">Variedade única de artigos</h2>
                     </div>
                     <p class="text-sm text-olive-800/60 max-w-xs mt-4 md:mt-0">
-                        Cada artigo é único. Se gostar de algo, reserve de imediato antes que desapareça.
+                        O nosso stock flutua de forma rápida. O que vê hoje numa loja pode não estar lá amanhã.
                     </p>
                 </div>
 
-                <!-- Grid de Categorías con Fotografías Imponentes -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Grid de 8 Categorías Reais -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     
-                    <!-- Categoria 1 -->
-                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm cursor-pointer">
-                        <div class="h-[400px] overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1581428982868-e410dd047a90?q=80&w=800&auto=format&fit=crop" 
-                                 alt="Mobiliário Vintage e Mid-Century" 
+                    <!-- 1. Móveis Modernos -->
+                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm">
+                        <div class="h-[280px] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1581428982868-e410dd047a90?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Móveis Modernos de Segunda Mão" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-transparent to-transparent"></div>
                         </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                            <span class="text-xs uppercase tracking-wider text-terracotta-500 font-semibold">Peças de Autor & Clássicos</span>
-                            <h3 class="font-serif text-2xl mt-1">Mobiliário</h3>
-                            <p class="text-sm text-white/80 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Cadeiras, aparadores, mesas de jantar e sofás intemporais.</p>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="font-serif text-xl">Móveis Modernos</h3>
+                            <p class="text-xs text-white/80 mt-1 uppercase tracking-wider">Segunda Mão</p>
                         </div>
                     </div>
 
-                    <!-- Categoria 2 -->
-                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm cursor-pointer">
-                        <div class="h-[400px] overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800&auto=format&fit=crop" 
-                                 alt="Eletrodomésticos premium inspecionados" 
+                    <!-- 2. Móveis Vintage -->
+                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm">
+                        <div class="h-[280px] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Móveis Vintage" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-transparent to-transparent"></div>
                         </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                            <span class="text-xs uppercase tracking-wider text-terracotta-500 font-semibold">100% Testados & Funcionais</span>
-                            <h3 class="font-serif text-2xl mt-1">Eletrodomésticos</h3>
-                            <p class="text-sm text-white/80 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Equipamentos de cozinha e lavagem de marcas de confiança.</p>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="font-serif text-xl">Móveis Vintage</h3>
+                            <p class="text-xs text-white/80 mt-1 uppercase tracking-wider">Clássicos com História</p>
                         </div>
                     </div>
 
-                    <!-- Categoria 3 -->
-                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm cursor-pointer">
-                        <div class="h-[400px] overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop" 
-                                 alt="Iluminação e objetos decorativos vintage" 
+                    <!-- 3. Candeeiros -->
+                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm">
+                        <div class="h-[280px] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Candeeiros e Iluminação" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-transparent to-transparent"></div>
                         </div>
-                        <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
-                            <span class="text-xs uppercase tracking-wider text-terracotta-500 font-semibold">Carácter para a Casa</span>
-                            <h3 class="font-serif text-2xl mt-1">Iluminação & Decor</h3>
-                            <p class="text-sm text-white/80 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Candeeiros industriais, espelhos vintage e peças decorativas.</p>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="font-serif text-xl">Candeeiros</h3>
+                            <p class="text-xs text-white/80 mt-1 uppercase tracking-wider">Iluminação de Caráter</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. Sofás -->
+                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm">
+                        <div class="h-[280px] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Sofás e Poltronas" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="font-serif text-xl">Sofás</h3>
+                            <p class="text-xs text-white/80 mt-1 uppercase tracking-wider">Conforto Único</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. Livros -->
+                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm">
+                        <div class="h-[280px] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Livros" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="font-serif text-xl">Livros</h3>
+                            <p class="text-xs text-white/80 mt-1 uppercase tracking-wider">Leituras Perdidas</p>
+                        </div>
+                    </div>
+
+                    <!-- 6. Roupa -->
+                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm">
+                        <div class="h-[280px] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Roupa de segunda mão" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="font-serif text-xl">Roupa</h3>
+                            <p class="text-xs text-white/80 mt-1 uppercase tracking-wider">Estilo Sustentável</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. Curiosidades -->
+                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm">
+                        <div class="h-[280px] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Curiosidades, Máquinas de Escrever, Ventiladores" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="font-serif text-xl">Curiosidades</h3>
+                            <p class="text-xs text-white/80 mt-1 uppercase tracking-wider">Máquinas de escrever, ventiladores antigos e raridades</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. Peças Selecionadas -->
+                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm">
+                        <div class="h-[280px] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=600&auto=format&fit=crop" 
+                                 alt="Elementos de Decoração Extra" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="font-serif text-xl">Decoração</h3>
+                            <p class="text-xs text-white/80 mt-1 uppercase tracking-wider">Pequenos Detalhes</p>
                         </div>
                     </div>
 
@@ -202,61 +267,117 @@
             </div>
         </section>
 
-        <!-- Como funciona (Proceso simplificado de 3 pasos) -->
-        <section id="como-funciona" class="py-20 bg-cream-100 border-y border-cream-200">
+        <!-- Directorio de Tiendas ("Perto de si") -->
+        <section id="lojas" class="py-20 bg-cream-100 border-t border-cream-200">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center max-w-xl mx-auto mb-16">
-                    <span class="text-xs font-semibold tracking-widest text-terracotta-600 uppercase">Processo Transparente</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl text-olive-800 mt-2">Como garantimos a sua tranquilidade</h2>
+                    <span class="text-xs font-semibold tracking-widest text-terracotta-600 uppercase">Proximidade</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-olive-800 mt-2">Nossas Lojas em Portugal</h2>
+                    <p class="text-sm text-olive-800/70 mt-3">Não temos armazém centralizado. Dispomos de várias lojas distribuídas estrategicamente para que possa ver os artigos ao vivo.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <!-- Lisboa -->
+                    <div class="bg-cream-50 p-6 vintage-border shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl text-olive-800 mb-2">Lisboa</h3>
+                            <p class="text-sm text-olive-800/70 mb-4">Dispomos de 4 lojas abertas na região da grande capital.</p>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="text-xs font-semibold uppercase tracking-wider text-terracotta-600 hover:text-olive-800 transition-colors inline-flex items-center gap-2">
+                            Encontrar "Perto de Si" &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Porto -->
+                    <div class="bg-cream-50 p-6 vintage-border shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl text-olive-800 mb-2">Porto</h3>
+                            <p class="text-sm text-olive-800/70 mb-4">Explore a nossa seleção em 3 lojas no coração do Norte.</p>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="text-xs font-semibold uppercase tracking-wider text-terracotta-600 hover:text-olive-800 transition-colors inline-flex items-center gap-2">
+                            Encontrar "Perto de Si" &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Coimbra -->
+                    <div class="bg-cream-50 p-6 vintage-border shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl text-olive-800 mb-2">Coimbra</h3>
+                            <p class="text-sm text-olive-800/70 mb-4">Espaços com constante rotação de stock na zona centro.</p>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="text-xs font-semibold uppercase tracking-wider text-terracotta-600 hover:text-olive-800 transition-colors inline-flex items-center gap-2">
+                            Encontrar "Perto de Si" &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Algarve -->
+                    <div class="bg-cream-50 p-6 vintage-border shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl text-olive-800 mb-2">Algarve</h3>
+                            <p class="text-sm text-olive-800/70 mb-4">Visite as nossas 3 lojas no sul com artigos de segunda mão.</p>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="text-xs font-semibold uppercase tracking-wider text-terracotta-600 hover:text-olive-800 transition-colors inline-flex items-center gap-2">
+                            Encontrar "Perto de Si" &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como funciona (Proceso real y simplificado) -->
+        <section id="como-funciona" class="py-20 bg-cream-50 border-t border-cream-200">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-xl mx-auto mb-16">
+                    <span class="text-xs font-semibold tracking-widest text-terracotta-600 uppercase">Dinâmica Sem Segredos</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-olive-800 mt-2">Como funciona a SecondChance</h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
                     <!-- Tarjeta 1 -->
-                    <div class="relative bg-cream-50 p-8 vintage-border shadow-sm">
+                    <div class="relative bg-cream-100 p-8 vintage-border shadow-sm">
                         <div class="font-serif text-6xl font-light text-terracotta-500/20 absolute top-4 right-6">01</div>
-                        <h3 class="font-serif text-xl text-olive-800 mt-6 mb-4">Escolha na Galeria</h3>
+                        <h3 class="font-serif text-xl text-olive-800 mt-6 mb-4">Seleção das Peças</h3>
                         <p class="text-sm text-olive-800/70 leading-relaxed">
-                            Explore as nossas peças online. Fotografamos cada detalhe, imperfeição e ângulo sob luz natural para que saiba exatamente o que está a comprar.
+                            Procuramos e filtramos artigos interessantes de segunda mão por todo o país. Não somos restauradores, mas selecionamos rigorosamente peças com bom design e que tenham integridade estrutural.
                         </p>
                     </div>
 
                     <!-- Tarjeta 2 -->
-                    <div class="relative bg-cream-50 p-8 vintage-border shadow-sm">
+                    <div class="relative bg-cream-100 p-8 vintage-border shadow-sm">
                         <div class="font-serif text-6xl font-light text-terracotta-500/20 absolute top-4 right-6">02</div>
-                        <h3 class="font-serif text-xl text-olive-800 mt-6 mb-4">Reserve via WhatsApp</h3>
+                        <h3 class="font-serif text-xl text-olive-800 mt-6 mb-4">Distribuição Rápida</h3>
                         <p class="text-sm text-olive-800/70 leading-relaxed">
-                            Fale diretamente connosco para guardar a sua peça. Sem formulários complexos nem registos chatos. Um contacto simples para reservar na hora.
+                            Enviamos as peças diretamente para as nossas várias lojas físicas de forma descentralizada. Devido ao volume dinâmico, o stock é altamente rotativo e imprevisível.
                         </p>
                     </div>
 
                     <!-- Tarjeta 3 -->
-                    <div class="relative bg-cream-50 p-8 vintage-border shadow-sm">
+                    <div class="relative bg-cream-100 p-8 vintage-border shadow-sm">
                         <div class="font-serif text-6xl font-light text-terracotta-500/20 absolute top-4 right-6">03</div>
-                        <h3 class="font-serif text-xl text-olive-800 mt-6 mb-4">Veja e Recolha no Showroom</h3>
+                        <h3 class="font-serif text-xl text-olive-800 mt-6 mb-4">Visite e Adquira Localmente</h3>
                         <p class="text-sm text-olive-800/70 leading-relaxed">
-                            Visite o nosso armazém showroom em Portugal para inspecionar pessoalmente o artigo. Se adorar, leva-o na hora. A decisão final é sempre sua.
+                            Utilize o nosso diretório para encontrar o espaço mais próximo. O canal de WhatsApp funciona como suporte para tirar dúvidas rápidas sobre localizações ou novas entradas de stock.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Final Exclusivo / De Reserva -->
+        <!-- CTA Final de Soporte Informativo -->
         <section class="py-24 bg-olive-800 text-cream-50 relative overflow-hidden">
-            <!-- Detalles gráficos de fondo vintage -->
             <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#F7F3EB 1px, transparent 1px); background-size: 24px 24px;"></div>
             
             <div class="max-w-4xl mx-auto px-6 text-center relative z-10 space-y-8">
-                <span class="text-xs font-semibold tracking-widest text-terracotta-500 uppercase">Descubra Peças Únicas</span>
+                <span class="text-xs font-semibold tracking-widest text-terracotta-500 uppercase">Esclareça as suas Dúvidas</span>
                 <h2 class="font-serif text-4xl sm:text-5xl font-light leading-tight">
-                    Pronto para dar uma <span class="italic font-normal">segunda oportunidade</span> ao bom design?
+                    Ficou com alguma dúvida sobre o nosso funcionamento?
                 </h2>
                 <p class="text-base sm:text-lg text-cream-100/70 max-w-xl mx-auto leading-relaxed">
-                    Entre em contacto para receber a nossa lista semanal de novas entradas de stock ou para agendar uma visita ao armazém.
+                    Entre em contacto connosco através do WhatsApp. Estamos disponíveis para prestar esclarecimentos e dar mais informações sobre as nossas lojas físicas e stock.
                 </p>
                 <div class="pt-4">
                     <a href="https://wa.me/#" class="inline-flex items-center justify-center px-10 py-5 text-sm font-semibold uppercase tracking-wider text-olive-800 bg-cream-100 hover:bg-terracotta-500 hover:text-white transition-all shadow-xl">
-                        Iniciar Conversa no WhatsApp
+                        Pedir Informações via WhatsApp
                     </a>
                 </div>
             </div>
@@ -268,9 +389,9 @@
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="font-serif text-xl font-bold tracking-tight text-cream-100">
                 Second<span class="italic font-normal text-terracotta-500">Chance</span>
-            </footer>
+            </div>
             <p class="text-xs text-cream-200/50">
-                &copy; 2026 SecondChance. Todos os direitos reservados. Design com carácter e curadoria responsável.
+                &copy; 2026 SecondChance. Todos os direitos reservados. Artigos de segunda mão selecionados com integridade.
             </p>
         </div>
     </footer>
