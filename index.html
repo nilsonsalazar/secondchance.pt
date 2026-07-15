@@ -7,6 +7,8 @@
     <meta name="description" content="Milhares de oportunidades e novos artigos todos os dias nas lojas SecondChance. Móveis, decoração, eletrodomésticos, livros, roupa e pechinchas que mudam diariamente.">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome (Ícones Planos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
@@ -58,7 +60,7 @@
                 <a href="#lojas" class="hover:text-terracotta-600 transition-colors">Onde Estamos</a>
                 <a href="#categorias" class="hover:text-terracotta-600 transition-colors font-bold">O que Temos</a>
                 <a href="#porque-visitar" class="hover:text-terracotta-600 transition-colors">Vantagens</a>
-                <a href="#hoje-em-loja" class="hover:text-terracotta-600 transition-colors text-terracotta-600">Achados de Hoje 🔥</a>
+                <a href="#hoje-em-loja" class="hover:text-terracotta-600 transition-colors text-terracotta-600">Achados de Hoje <i class="fas fa-fire ml-1"></i></a>
             </nav>
             <div>
                 <a href="https://wa.me/#" class="inline-flex items-center justify-center px-5 py-3 text-xs font-bold uppercase tracking-wider text-white bg-olive-800 hover:bg-terracotta-600 transition-all rounded-sm shadow-sm">
@@ -70,14 +72,14 @@
 
     <main>
         
-        <!-- 1. Hero Section Totalmente Redesenhada -->
+        <!-- 1. Hero Section -->
         <section class="relative bg-cream-100 py-12 lg:py-20 border-b border-cream-200 overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
                 <!-- Columna de Texto Comercial -->
                 <div class="lg:col-span-6 space-y-6">
                     <div class="inline-block bg-white px-3.5 py-1.5 rounded-sm border border-cream-200 shadow-xs">
-                        <span class="text-xs font-extrabold tracking-wider text-terracotta-600 uppercase">⚡ Novidades todas as semanas</span>
+                        <span class="text-xs font-extrabold tracking-wider text-terracotta-600 uppercase"><i class="fas fa-bolt mr-1.5"></i> Novidades todas as semanas</span>
                     </div>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-olive-800">
                         Hoje encontra algo diferente.<br>
@@ -96,7 +98,7 @@
                     </div>
                 </div>
 
-                <!-- 3. Collage de 8-10 Imágenes Pequeñas (Estilo Retalho Total) -->
+                <!-- 3. Collage de Imágenes Pequeñas -->
                 <div class="lg:col-span-6">
                     <div class="retail-grid h-[380px] sm:h-[450px]">
                         <!-- Sofá -->
@@ -140,35 +142,35 @@
             </div>
         </section>
 
-        <!-- 5. Bloco de Estatísticas Redesenhado -->
-        <section class="bg-white py-8 border-b border-cream-200">
+        <!-- 5. Bloco de Estatísticas (Ícones Planos) -->
+        <section class="bg-white py-10 border-b border-cream-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center divide-y lg:divide-y-0 lg:divide-x divide-cream-200/50">
                     <div class="pt-4 lg:pt-0 flex flex-col items-center justify-center">
-                        <span class="text-terracotta-600 text-3xl font-extrabold">⚡</span>
-                        <p class="text-xl font-black text-olive-800 mt-1">Novidades todos os dias</p>
+                        <i class="fas fa-sync-alt text-terracotta-600 text-2xl mb-2"></i>
+                        <p class="text-xl font-black text-olive-800">Novidades todos os dias</p>
                         <p class="text-xs text-olive-800/60 uppercase font-bold tracking-wider mt-0.5">Oportunidades em tempo real</p>
                     </div>
                     <div class="pt-4 lg:pt-0 flex flex-col items-center justify-center">
-                        <span class="text-terracotta-600 text-3xl font-extrabold">📦</span>
-                        <p class="text-xl font-black text-olive-800 mt-1">Centenas de peças diferentes</p>
+                        <i class="fas fa-boxes-stacked text-terracotta-600 text-2xl mb-2"></i>
+                        <p class="text-xl font-black text-olive-800">Centenas de peças diferentes</p>
                         <p class="text-xs text-olive-800/60 uppercase font-bold tracking-wider mt-0.5">De móveis a pequenas curiosidades</p>
                     </div>
                     <div class="pt-4 lg:pt-0 flex flex-col items-center justify-center">
-                        <span class="text-terracotta-600 text-3xl font-extrabold">🇵🇹</span>
-                        <p class="text-xl font-black text-olive-800 mt-1">Lojas em todo Portugal</p>
+                        <i class="fas fa-map-location-dot text-terracotta-600 text-2xl mb-2"></i>
+                        <p class="text-xl font-black text-olive-800">Lojas em todo Portugal</p>
                         <p class="text-xs text-olive-800/60 uppercase font-bold tracking-wider mt-0.5">A maior rede do país</p>
                     </div>
                     <div class="pt-4 lg:pt-0 flex flex-col items-center justify-center">
-                        <span class="text-terracotta-600 text-3xl font-extrabold">📍</span>
-                        <p class="text-xl font-black text-olive-800 mt-1">Descubra uma perto de si</p>
+                        <i class="fas fa-location-crosshairs text-terracotta-600 text-2xl mb-2"></i>
+                        <p class="text-xl font-black text-olive-800">Descubra uma perto de si</p>
                         <p class="text-xs text-olive-800/60 uppercase font-bold tracking-wider mt-0.5">Fácil acesso e parqueamento</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 9. Porque Vale a Pena Visitar (Substitui "Como funciona") -->
+        <!-- 9. Porque Vale a Pena Visitar -->
         <section id="porque-visitar" class="py-16 bg-cream-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <div class="text-center max-w-2xl mx-auto mb-12">
@@ -179,25 +181,25 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="bg-white p-6 rounded-lg border border-cream-200 shadow-xs">
-                        <div class="text-2xl mb-4">🚀</div>
+                        <div class="text-terracotta-600 text-xl mb-4"><i class="fas fa-bolt-lightning"></i></div>
                         <h3 class="text-lg font-bold text-olive-800 mb-2">Novidades constantes</h3>
                         <p class="text-sm text-olive-800/70">Cada visita é diferente. Recebemos novos artigos semanalmente em todos os nossos pontos de venda.</p>
                     </div>
 
                     <div class="bg-white p-6 rounded-lg border border-cream-200 shadow-xs">
-                        <div class="text-2xl mb-4">🏷️</div>
+                        <div class="text-terracotta-600 text-xl mb-4"><i class="fas fa-tags"></i></div>
                         <h3 class="text-lg font-bold text-olive-800 mb-2">Preços acessíveis</h3>
                         <p class="text-sm text-olive-800/70">Pode encontrar verdadeiros achados e pechinchas. O nosso objetivo é que leve os artigos na hora.</p>
                     </div>
 
                     <div class="bg-white p-6 rounded-lg border border-cream-200 shadow-xs">
-                        <div class="text-2xl mb-4">✨</div>
+                        <div class="text-terracotta-600 text-xl mb-4"><i class="fas fa-basket-shopping"></i></div>
                         <h3 class="text-lg font-bold text-olive-800 mb-2">Muito mais do que móveis</h3>
                         <p class="text-sm text-olive-800/70">Temos também livros, roupa, decoração, loiças, pequenos eletrodomésticos, curiosidades e muito mais.</p>
                     </div>
 
                     <div class="bg-white p-6 rounded-lg border border-cream-200 shadow-xs">
-                        <div class="text-2xl mb-4">🇵🇹</div>
+                        <div class="text-terracotta-600 text-xl mb-4"><i class="fas fa-store"></i></div>
                         <h3 class="text-lg font-bold text-olive-800 mb-2">Lojas por todo Portugal</h3>
                         <p class="text-sm text-olive-800/70">Passe pela loja física mais próxima e descubra o que chegou hoje. Sempre prontos a ajudar.</p>
                     </div>
@@ -205,7 +207,7 @@
             </div>
         </section>
 
-        <!-- 8. Secção Nova: "Hoje pode encontrar..." (Mosaico de Inspiração Pinterest) -->
+        <!-- 8. Secção Nova: "Hoje pode encontrar..." (Mosaico Pinterest) -->
         <section id="hoje-em-loja" class="py-16 bg-cream-100 border-t border-b border-cream-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
@@ -218,7 +220,7 @@
                     </p>
                 </div>
 
-                <!-- Mosaico Estilo Pinterest com Variedade (15 Fotos/Banners) -->
+                <!-- Mosaico Estilo Pinterest com Variedade -->
                 <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
                     <div class="break-inside-avoid bg-white p-3 rounded-lg border border-cream-200 shadow-xs">
                         <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=350&auto=format&fit=crop" class="w-full rounded-sm object-cover" alt="Sofá confortável">
@@ -256,7 +258,7 @@
             </div>
         </section>
 
-        <!-- 4. Categorias Ampliadas (16 Categorias Reais) -->
+        <!-- 4. Categorias Ampliadas (Ícones Planos) -->
         <section id="categorias" class="py-16 bg-cream-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <div class="text-center max-w-xl mx-auto mb-10">
@@ -267,88 +269,88 @@
 
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🛋️</span>
+                        <i class="fas fa-couch text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Móveis Modernos</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🪵</span>
+                        <i class="fas fa-chair text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Móveis Vintage</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🛋️</span>
+                        <i class="fas fa-loveseat text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Sofás</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🪑</span>
+                        <i class="fas fa-chair-office text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Cadeiras</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🍽️</span>
+                        <i class="fas fa-table text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Mesas</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">💡</span>
+                        <i class="fas fa-lightbulb text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Candeeiros</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">📚</span>
+                        <i class="fas fa-book text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Livros</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">👕</span>
+                        <i class="fas fa-shirt text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Roupa</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🪴</span>
+                        <i class="fas fa-icons text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Decoração</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🍽️</span>
+                        <i class="fas fa-utensils text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Utensílios</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🖼️</span>
+                        <i class="fas fa-image text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Quadros</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🧸</span>
+                        <i class="fas fa-puzzle-piece text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Brinquedos</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🪙</span>
+                        <i class="fas fa-coins text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Colecionismo</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🏺</span>
+                        <i class="fas fa-mask text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Curiosidades</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">📺</span>
+                        <i class="fas fa-tv text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Eletrónica</span>
                     </div>
                     <div class="bg-white p-4 rounded-md border border-cream-200 flex items-center gap-3 hover:border-terracotta-500 transition shadow-xs">
-                        <span class="text-xl">🔌</span>
+                        <i class="fas fa-plug text-olive-800/70 w-5 text-center"></i>
                         <span class="text-sm font-bold text-olive-800">Pequenos Eletrod.</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 10. Secção Emocional (A magia da Caça ao Tesouro) -->
+        <!-- 10. Secção Emocional -->
         <section class="py-16 bg-cream-100 border-t border-b border-cream-200">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-                <span class="text-xs font-bold tracking-widest text-terracotta-600 uppercase">Experiência Real</span>
+                <span class="text-xs font-bold tracking-widest text-terracotta-600 uppercase">Flutuação de Stock</span>
                 <h2 class="text-3xl font-extrabold text-olive-800 mt-2 mb-8">Nunca sabe o que vai encontrar nas nossas lojas</h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
                     <div class="bg-white p-6 rounded-md shadow-xs border border-cream-200">
-                        <span class="text-2xl block mb-2">🛋️ ➜ 🖨️</span>
+                        <span class="text-terracotta-600 text-xl block mb-2"><i class="fas fa-arrow-right-arrow-left"></i></span>
                         <p class="text-sm text-olive-800/80 italic leading-relaxed">
                             "Há quem venha à procura de um sofá... e saia com uma máquina de escrever antiga impecável para a secretária."
                         </p>
                     </div>
                     <div class="bg-white p-6 rounded-md shadow-xs border border-cream-200">
-                        <span class="text-2xl block mb-2">🔎 ➜ 🍽️</span>
+                        <span class="text-terracotta-600 text-xl block mb-2"><i class="fas fa-magnifying-glass"></i></span>
                         <p class="text-sm text-olive-800/80 italic leading-relaxed">
                             "Há quem entre apenas por curiosidade para ver as novidades... e encontre a mesa perfeita para a sala de jantar a metade do preço."
                         </p>
@@ -358,11 +360,11 @@
             </div>
         </section>
 
-        <!-- 6. Secção de Lojas Simplificada e Comercial (Com CTA Localizador) -->
+        <!-- 6. Secção de Lojas -->
         <section id="lojas" class="py-16 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <div class="text-center max-w-xl mx-auto mb-10">
-                    <span class="text-xs font-bold tracking-widest text-terracotta-600 uppercase font-bold">Localizações Físicas</span>
+                    <span class="text-xs font-bold tracking-widest text-terracotta-600 uppercase">Localizações Físicas</span>
                     <h2 class="text-3xl font-extrabold text-olive-800 mt-2">Onde Estamos em Portugal</h2>
                     <p class="text-sm text-olive-800/70 mt-2">
                         Não temos armazém central, as nossas lojas estão distribuídas e repletas de artigos para ver ao vivo e levar na hora.
@@ -373,7 +375,7 @@
                     <!-- Lisboa -->
                     <div class="bg-cream-50 p-6 rounded-md border border-cream-200 flex flex-col justify-between hover:shadow-md transition">
                         <div>
-                            <div class="text-xl mb-3">📍</div>
+                            <div class="text-olive-800/70 text-lg mb-3"><i class="fas fa-location-dot"></i></div>
                             <h3 class="text-lg font-bold text-olive-800 mb-1">Lisboa</h3>
                             <p class="text-sm text-olive-800/70 mb-4">Dispomos de 4 lojas na grande área de Lisboa.</p>
                         </div>
@@ -382,7 +384,7 @@
                     <!-- Porto -->
                     <div class="bg-cream-50 p-6 rounded-md border border-cream-200 flex flex-col justify-between hover:shadow-md transition">
                         <div>
-                            <div class="text-xl mb-3">📍</div>
+                            <div class="text-olive-800/70 text-lg mb-3"><i class="fas fa-location-dot"></i></div>
                             <h3 class="text-lg font-bold text-olive-800 mb-1">Porto</h3>
                             <p class="text-sm text-olive-800/70 mb-4">Visite as nossas 3 lojas no Norte do país.</p>
                         </div>
@@ -391,7 +393,7 @@
                     <!-- Coimbra -->
                     <div class="bg-cream-50 p-6 rounded-md border border-cream-200 flex flex-col justify-between hover:shadow-md transition">
                         <div>
-                            <div class="text-xl mb-3">📍</div>
+                            <div class="text-olive-800/70 text-lg mb-3"><i class="fas fa-location-dot"></i></div>
                             <h3 class="text-lg font-bold text-olive-800 mb-1">Coimbra</h3>
                             <p class="text-sm text-olive-800/70 mb-4">Explore os nossos 3 grandes espaços na zona Centro.</p>
                         </div>
@@ -400,14 +402,13 @@
                     <!-- Algarve -->
                     <div class="bg-cream-50 p-6 rounded-md border border-cream-200 flex flex-col justify-between hover:shadow-md transition">
                         <div>
-                            <div class="text-xl mb-3">📍</div>
+                            <div class="text-olive-800/70 text-lg mb-3"><i class="fas fa-location-dot"></i></div>
                             <h3 class="text-lg font-bold text-olive-800 mb-1">Algarve</h3>
                             <p class="text-sm text-olive-800/70 mb-4">Temos 4 lojas repletas de oportunidades no Sul.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- CTA para o futuro Localizador -->
                 <div class="text-center">
                     <a href="#lojas" class="inline-flex items-center justify-center px-10 py-5 text-sm font-extrabold uppercase tracking-wider text-white bg-terracotta-600 hover:bg-terracotta-500 transition-all rounded-sm shadow-md">
                         Encontrar uma loja perto de si
@@ -416,7 +417,7 @@
             </div>
         </section>
 
-        <!-- 7. WhatsApp Reposicionado como Canal Útil e Direto -->
+        <!-- 7. WhatsApp Útil -->
         <section class="py-20 bg-olive-800 text-cream-50 relative overflow-hidden">
             <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#F7F3EB 1px, transparent 1px); background-size: 24px 24px;"></div>
             
@@ -429,8 +430,8 @@
                     Quer saber onde encontrar uma categoria de artigos em stock ou qual a loja SecondChance mais próxima de si? Fale connosco hoje mesmo por mensagem rápida[cite: 4].
                 </p>
                 <div class="pt-2">
-                    <a href="https://wa.me/#" class="inline-flex items-center justify-center px-10 py-4.5 text-sm font-extrabold uppercase tracking-wider text-olive-800 bg-cream-100 hover:bg-terracotta-500 hover:text-white transition-all shadow-lg rounded-sm">
-                        Falar connosco via WhatsApp
+                    <a href="https://wa.me/#" class="inline-flex items-center justify-center px-10 py-4.5 text-sm font-extrabold uppercase tracking-wider text-olive-800 bg-cream-100 hover:bg-terracotta-500 hover:text-white transition-all shadow-lg rounded-sm gap-2">
+                        <i class="fab fa-whatsapp text-lg"></i> Falar connosco
                     </a>
                 </div>
             </div>
@@ -445,7 +446,7 @@
                     Second<span class="italic font-normal text-terracotta-500">Chance</span>
                 </div>
                 <p class="text-xs text-cream-200/50 leading-relaxed max-w-xs font-semibold">
-                    A maior rede de lojas físicas de oportunidades e artigos em segunda mão selecionados em Portugal. Novos produtos todos os dias.
+                    A maior rede de lojas físicas de oportunidades e artigos em segunda mão em Portugal. Novos produtos todos os dias.
                 </p>
             </div>
             <div>
@@ -468,7 +469,7 @@
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 border-t border-olive-800/50 flex flex-col sm:flex-row items-center justify-between gap-6">
             <p class="text-xs text-cream-200/40 font-bold">
-                &copy; 2026 SecondChance. Todos os direitos reservados. Artigos de segunda mão em Portugal.
+                &copy; 2026 SecondChance. Todos os direitos reservados.
             </p>
         </div>
     </footer>
