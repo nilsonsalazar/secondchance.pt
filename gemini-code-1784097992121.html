@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondChance — Curated Second-Hand Warehouse</title>
+    <!-- Tailwind CSS para el prototipado rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: {
+                            50: '#FDFBF7',
+                            100: '#F7F3EB',
+                            200: '#EDE5D3',
+                        },
+                        olive: {
+                            800: '#2C3E2B',
+                            900: '#1B271A',
+                        },
+                        terracotta: {
+                            500: '#D96B43',
+                            600: '#C85A32',
+                        },
+                        charcoal: '#2D2D2D'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Fuentes Google: Playfair Display (Vintage) y Plus Jakarta Sans (Moderna) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .vintage-border {
+            border: 1px solid rgba(44, 62, 43, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-cream-50 text-charcoal font-sans antialiased">
+
+    <!-- Header / Navegación -->
+    <header class="sticky top-0 z-50 bg-cream-50/90 backdrop-blur-md border-b border-cream-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl font-bold tracking-tight text-olive-800">
+                Second<span class="italic font-normal text-terracotta-600">Chance</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-olive-800/80">
+                <a href="#categorias" class="hover:text-terracotta-600 transition-colors">Categorias</a>
+                <a href="#como-funciona" class="hover:text-terracotta-600 transition-colors">Como Funciona</a>
+                <a href="#sobre-nos" class="hover:text-terracotta-600 transition-colors">O Manifesto</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/#" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-olive-800 hover:bg-terracotta-600 transition-all rounded-none shadow-sm">
+                    Reservar via WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Estilo Editorial, Enfocado en Fotografía) -->
+        <section class="relative overflow-hidden py-16 lg:py-24 border-b border-cream-200">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Columna de Texto -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-block text-xs font-semibold tracking-widest text-terracotta-600 uppercase">
+                        Armazém de Curadoria Independente
+                    </span>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal leading-tight text-olive-800">
+                        Design com história. <br>
+                        <span class="italic font-light">Preços sem mistério.</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-olive-800/70 leading-relaxed max-w-md">
+                        Não somos uma feira de usados comum, nem uma boutique vintage inflacionada. Selecionamos, inspecionamos e catalogamos peças singulares para a sua casa.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                        <a href="#categorias" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold uppercase tracking-wider text-white bg-terracotta-600 hover:bg-terracotta-500 transition-all shadow-md text-center">
+                            Explorar Catálogo
+                        </a>
+                        <a href="#como-funciona" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold uppercase tracking-wider text-olive-800 border border-olive-800/30 hover:border-olive-800 transition-all text-center">
+                            Como Funciona?
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna de Imágenes (Collage Moderno/Vintage asimétrico) -->
+                <div class="lg:col-span-7 grid grid-cols-12 gap-4 relative">
+                    <!-- Decoración geométrica retro de fondo -->
+                    <div class="absolute -right-8 -bottom-8 w-48 h-48 rounded-full bg-cream-200 opacity-50 -z-10"></div>
+                    
+                    <div class="col-span-8 overflow-hidden vintage-border shadow-lg transform -rotate-1 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Cadeiras Mid-Century Modernas" 
+                             class="w-full h-[350px] object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    
+                    <div class="col-span-4 overflow-hidden vintage-border shadow-lg transform translate-y-12 rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=600&auto=format&fit=crop" 
+                             alt="Detalhe de móvel de madeira vintage" 
+                             class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Stats / Diferenciales Rápidos -->
+        <section class="bg-cream-100 py-10 border-b border-cream-200">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-y md:divide-y-0 md:divide-x divide-cream-200/60">
+                    <div class="text-center md:px-4">
+                        <p class="font-serif text-3xl font-bold text-olive-800">100%</p>
+                        <p class="text-xs uppercase tracking-wider text-olive-800/60 mt-1">Inspecionado na Origem</p>
+                    </div>
+                    <div class="text-center pt-6 md:pt-0 md:px-4">
+                        <p class="font-serif text-3xl font-bold text-olive-800">Fotografia</p>
+                        <p class="text-xs uppercase tracking-wider text-olive-800/60 mt-1">Real e Sem Filtros</p>
+                    </div>
+                    <div class="text-center pt-6 md:pt-0 md:px-4">
+                        <p class="font-serif text-3xl font-bold text-olive-800">Semanal</p>
+                        <p class="text-xs uppercase tracking-wider text-olive-800/60 mt-1">Novas Entradas de Stock</p>
+                    </div>
+                    <div class="text-center pt-6 md:pt-0 md:px-4">
+                        <p class="font-serif text-3xl font-bold text-olive-800">Direto</p>
+                        <p class="text-xs uppercase tracking-wider text-olive-800/60 mt-1">Reserva via WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Categorías Reales (Ignoradas en la versión de Polsia) -->
+        <section id="categorias" class="py-20 bg-cream-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <span class="text-xs font-semibold tracking-widest text-terracotta-600 uppercase">Explorar por Estilo e Função</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl text-olive-800 mt-2">O que temos no nosso armazém</h2>
+                    </div>
+                    <p class="text-sm text-olive-800/60 max-w-xs mt-4 md:mt-0">
+                        Cada artigo é único. Se gostar de algo, reserve de imediato antes que desapareça.
+                    </p>
+                </div>
+
+                <!-- Grid de Categorías con Fotografías Imponentes -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Categoria 1 -->
+                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm cursor-pointer">
+                        <div class="h-[400px] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1581428982868-e410dd047a90?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Mobiliário Vintage e Mid-Century" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                            <span class="text-xs uppercase tracking-wider text-terracotta-500 font-semibold">Peças de Autor & Clássicos</span>
+                            <h3 class="font-serif text-2xl mt-1">Mobiliário</h3>
+                            <p class="text-sm text-white/80 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Cadeiras, aparadores, mesas de jantar e sofás intemporais.</p>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 2 -->
+                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm cursor-pointer">
+                        <div class="h-[400px] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Eletrodomésticos premium inspecionados" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                            <span class="text-xs uppercase tracking-wider text-terracotta-500 font-semibold">100% Testados & Funcionais</span>
+                            <h3 class="font-serif text-2xl mt-1">Eletrodomésticos</h3>
+                            <p class="text-sm text-white/80 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Equipamentos de cozinha e lavagem de marcas de confiança.</p>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 3 -->
+                    <div class="group relative overflow-hidden bg-cream-100 vintage-border shadow-sm cursor-pointer">
+                        <div class="h-[400px] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Iluminação e objetos decorativos vintage" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-olive-900/80 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                            <span class="text-xs uppercase tracking-wider text-terracotta-500 font-semibold">Carácter para a Casa</span>
+                            <h3 class="font-serif text-2xl mt-1">Iluminação & Decor</h3>
+                            <p class="text-sm text-white/80 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Candeeiros industriais, espelhos vintage e peças decorativas.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Como funciona (Proceso simplificado de 3 pasos) -->
+        <section id="como-funciona" class="py-20 bg-cream-100 border-y border-cream-200">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-xl mx-auto mb-16">
+                    <span class="text-xs font-semibold tracking-widest text-terracotta-600 uppercase">Processo Transparente</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-olive-800 mt-2">Como garantimos a sua tranquilidade</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                    <!-- Tarjeta 1 -->
+                    <div class="relative bg-cream-50 p-8 vintage-border shadow-sm">
+                        <div class="font-serif text-6xl font-light text-terracotta-500/20 absolute top-4 right-6">01</div>
+                        <h3 class="font-serif text-xl text-olive-800 mt-6 mb-4">Escolha na Galeria</h3>
+                        <p class="text-sm text-olive-800/70 leading-relaxed">
+                            Explore as nossas peças online. Fotografamos cada detalhe, imperfeição e ângulo sob luz natural para que saiba exatamente o que está a comprar.
+                        </p>
+                    </div>
+
+                    <!-- Tarjeta 2 -->
+                    <div class="relative bg-cream-50 p-8 vintage-border shadow-sm">
+                        <div class="font-serif text-6xl font-light text-terracotta-500/20 absolute top-4 right-6">02</div>
+                        <h3 class="font-serif text-xl text-olive-800 mt-6 mb-4">Reserve via WhatsApp</h3>
+                        <p class="text-sm text-olive-800/70 leading-relaxed">
+                            Fale diretamente connosco para guardar a sua peça. Sem formulários complexos nem registos chatos. Um contacto simples para reservar na hora.
+                        </p>
+                    </div>
+
+                    <!-- Tarjeta 3 -->
+                    <div class="relative bg-cream-50 p-8 vintage-border shadow-sm">
+                        <div class="font-serif text-6xl font-light text-terracotta-500/20 absolute top-4 right-6">03</div>
+                        <h3 class="font-serif text-xl text-olive-800 mt-6 mb-4">Veja e Recolha no Showroom</h3>
+                        <p class="text-sm text-olive-800/70 leading-relaxed">
+                            Visite o nosso armazém showroom em Portugal para inspecionar pessoalmente o artigo. Se adorar, leva-o na hora. A decisão final é sempre sua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final Exclusivo / De Reserva -->
+        <section class="py-24 bg-olive-800 text-cream-50 relative overflow-hidden">
+            <!-- Detalles gráficos de fondo vintage -->
+            <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#F7F3EB 1px, transparent 1px); background-size: 24px 24px;"></div>
+            
+            <div class="max-w-4xl mx-auto px-6 text-center relative z-10 space-y-8">
+                <span class="text-xs font-semibold tracking-widest text-terracotta-500 uppercase">Descubra Peças Únicas</span>
+                <h2 class="font-serif text-4xl sm:text-5xl font-light leading-tight">
+                    Pronto para dar uma <span class="italic font-normal">segunda oportunidade</span> ao bom design?
+                </h2>
+                <p class="text-base sm:text-lg text-cream-100/70 max-w-xl mx-auto leading-relaxed">
+                    Entre em contacto para receber a nossa lista semanal de novas entradas de stock ou para agendar uma visita ao armazém.
+                </p>
+                <div class="pt-4">
+                    <a href="https://wa.me/#" class="inline-flex items-center justify-center px-10 py-5 text-sm font-semibold uppercase tracking-wider text-olive-800 bg-cream-100 hover:bg-terracotta-500 hover:text-white transition-all shadow-xl">
+                        Iniciar Conversa no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-olive-900 text-cream-200/80 py-12 border-t border-olive-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="font-serif text-xl font-bold tracking-tight text-cream-100">
+                Second<span class="italic font-normal text-terracotta-500">Chance</span>
+            </footer>
+            <p class="text-xs text-cream-200/50">
+                &copy; 2026 SecondChance. Todos os direitos reservados. Design com carácter e curadoria responsável.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
